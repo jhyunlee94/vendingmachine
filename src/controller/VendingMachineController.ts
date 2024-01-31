@@ -1,8 +1,12 @@
+import CoinGenerator from "../util/CoinGenerator";
+
 class VendingMachineController {
   constructor() {}
 
-  run(): void {
+  run() {
     console.log("run test");
+    const coinGenerator = new CoinGenerator();
+    coinGenerator.generate();
   }
 }
 
